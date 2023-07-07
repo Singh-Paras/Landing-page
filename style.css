@@ -1,0 +1,273 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* outline: 1px solid green; */
+}
+
+body {
+  height: 250vh;
+  background-repeat: no-repeat;
+  font-family: "Poppins", sans-serif; 
+}
+
+section {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  min-width: 100vh;
+  display: flex;
+  flex-direction: column;
+  background: linear-gradient(
+    to right,
+    rgb(198, 188, 255) 0%,
+    rgba(174, 167, 255, 0.889) 28%,
+    rgb(234, 234, 234) 28%,
+    rgb(255, 255, 255) 100%
+  );
+  /* justify-content: flex-st; */
+}
+
+header {
+  position: relative;
+  top: 0;
+  width: 100%;
+  padding: 30px 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header .logo {
+  position: relative;
+  color: black;
+  font-size: 40px;
+  text-decoration: none;
+  letter-spacing: 2px;
+}
+
+header .navbar a {
+  color: black;
+  font-weight: 700;
+  text-decoration: none;
+  letter-spacing: 1px;
+  padding: 2px 15px;
+  border-radius: 20px;
+  margin-right: 7vh;
+  transition: 0.3s;
+  transition-property: background;
+}
+
+header .navbar a:hover {
+  background-color: rgba(79, 42, 116, 0.301);
+  color: black;
+}
+
+.data {
+  margin: 60px 100px;
+}
+
+.info {
+  max-width: 650px;
+}
+#home,
+#about {
+  color: black;
+}
+
+#home:hover,
+#about:hover {
+  background-color: black;
+  color: white;
+}
+
+.data {
+  display: flex;
+  /* max-width: 550px; */
+  margin: 60px 100px;
+}
+
+.data .info h2 {
+  color: #00204a;
+  font-size: 50px;
+  text-transform: uppercase;
+  font-weight: 800;
+  letter-spacing: 2px;
+  line-height: 60px;
+  margin-bottom: 30px;
+}
+
+.quote {
+  font-weight: 500;
+  font-size: 1.1rem;
+}
+
+.media-icons {
+  display: flex;
+  justify-content: center;
+}
+
+.header__image {
+  margin-left: 5vw;
+}
+
+.header__image img {
+  border: 0.5rem solid whitesmoke;
+  border-radius: 2rem;
+  box-shadow: 5px 5px 30px rgba(0, 0, 0, 0.2);
+}
+
+.header__image img:nth-child(1) {
+  max-width: 250px;
+}
+
+.header__image img:nth-child(2) {
+  position: relative;
+  top: 10%;
+  right: 20%;
+  max-width: 150px;
+}
+
+.destinations h2 {
+  text-align: center;
+  font-size: 3rem;
+  line-height: 6rem;
+  letter-spacing: 10px;
+  text-transform: uppercase;
+  color: white;
+}
+
+.destinations {
+  height: 140vh;
+  background: linear-gradient(
+    to right,
+    rgb(103, 97, 136) 0%,
+    rgba(24, 23, 29, 0.889) 50%,
+    rgba(24, 23, 29, 0.889) 50%,
+    rgb(103, 97, 136) 100%
+  );
+  /* background-color: rgba(147, 77, 160, 0.622); */
+}
+
+.travel-content {
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  display: flex;
+}
+
+@import url(https://fonts.googleapis.com/css?family=Raleway);
+*,
+*:before,
+*:after {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.container {
+  padding: 0;
+  float: left;
+  width: 100%;
+}
+
+.content {
+  position: relative;
+  width: 20vw;
+  max-width: 400px;
+  margin: auto;
+  margin: 10px;
+  overflow: hidden;
+}
+
+.content .content-overlay {
+  background: rgba(117, 110, 110, 0.7);
+  position: absolute;
+  height: 100%;
+  width: 20vw;
+  left: 0;
+  top: 0;
+  border-radius: 25px;
+  bottom: 0;
+  right: 0;
+  opacity: 0;
+  -webkit-transition: all 0.4s ease-in-out 0s;
+  -moz-transition: all 0.4s ease-in-out 0s;
+  transition: all 0.4s ease-in-out 0s;
+}
+
+.content:hover .content-overlay {
+  opacity: 0.2;
+}
+
+.content-image {
+  border: 0.5rem solid whitesmoke;
+  width: 100%;
+  height: 26vw;
+  width: 20vw;
+  border-radius: 25px;
+}
+
+.content-details {
+  position: absolute;
+  text-align: center;
+  padding-left: 1em;
+  padding-right: 1em;
+  width: 100%;
+  top: 50%;
+  left: 50%;
+  opacity: 0;
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  -webkit-transition: all 0.3s ease-in-out 0s;
+  -moz-transition: all 0.3s ease-in-out 0s;
+  transition: all 0.3s ease-in-out 0s;
+  font-family: "Play", sans-serif;
+}
+
+.content:hover .content-details {
+  top: 50%;
+  left: 50%;
+  opacity: 1;
+}
+
+.content-details h3 {
+  color: white;
+  background-color: rgba(79, 42, 116, 0.301);
+  font-weight: 600;
+  font-size: 2rem;
+  letter-spacing: 0.15em;
+  margin-bottom: 0.5em;
+  text-transform: uppercase;
+}
+
+.fadeIn-bottom {
+  top: 90%;
+}
+
+i {
+  font-size: 2rem;
+  margin: 1.4rem 4rem 2rem 4rem;
+  color: #eaf3fe;
+}
+
+.media-icons {
+  background-color: #00204a;
+}
+
+.follow{
+  display: flex;
+  color: rgb(255, 254, 254);
+  /* background-color: yellow; */
+  text-transform: uppercase;
+  font-size: 2rem;
+  justify-content: center;
+  align-items: center;
+  font-family: "Poppins", sans-serif;
+  margin-right: 10rem;
+  letter-spacing: 2px;
+}
